@@ -67,3 +67,11 @@ header img{
     bottom: 10%;
     right: 97%;
 }
+
+.output{
+    background-color: white;
+    border-radius: 1rem;
+    font-size: 1.3rem;
+    padding: 0 .5rem;
+    margin-bottom: .3rem;
+}

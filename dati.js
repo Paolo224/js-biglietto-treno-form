@@ -21,12 +21,22 @@ button.addEventListener('click', function() {
     
     if ((etaDelPasseggero.value > 18) && (etaDelPasseggero.value < 65)){
         prezzoFinale = prezzo;
+        document.getElementById('sconto').innerHTML = '0€';
     } else if (etaDelPasseggero.value < 18){
         prezzoFinale = (prezzo - prezzoMinorenni);
+        document.getElementById('sconto').innerHTML = '17,5%';
     } else {
         prezzoFinale = (prezzo - prezzoAnziani);
+        document.getElementById('sconto').innerHTML = '33,3%';
     }
 
-    document.getElementById('output').innerHTML = prezzoFinale.toFixed(2);
+    const iva = prezzoFinale * 22 / 100;
+
+    document.getElementById('iva').innerHTML = iva.toFixed(2) + '€';
+    document.getElementById('output').innerHTML = prezzoFinale.toFixed(2) + "€";
+
+    let totaleDaPagare = ( prezzoFinale + iva);
+    
+    document.getElementById('totale').innerHTML = totaleDaPagare.toFixed(2) + '€';
 })
 
