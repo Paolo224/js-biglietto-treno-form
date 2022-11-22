@@ -4,18 +4,12 @@ const etaDelPasseggero = document.querySelector ('#eta');
 
 const button = document.querySelector ('.btn');
 
-let prezzoMinorenni;
-
-let prezzoAnziani;
-
-let prezzo;
-
 let prezzoFinale;
 
 button.addEventListener('click', function() {
-    prezzo = distanzaInKm.value * 0.2762;
-    prezzoAnziani = prezzo * 33.3 /100;
-    prezzoMinorenni = prezzo * 12.5 / 100;
+    let prezzo = distanzaInKm.value * 0.2762;
+    let prezzoAnziani = prezzo * 33.3 /100;
+    let prezzoMinorenni = prezzo * 12.5 / 100;
     console.log(etaDelPasseggero.value);
     console.log(distanzaInKm.value);
     
@@ -27,6 +21,6 @@ button.addEventListener('click', function() {
         prezzoFinale = (prezzo - prezzoAnziani);
     }
 
-    document.getElementById('output').innerHTML = prezzoFinale;
+    document.getElementById('output').innerHTML = prezzoFinale.toFixed(2);
 })
 
