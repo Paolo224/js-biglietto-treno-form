@@ -1,3 +1,9 @@
+const nome = document.querySelector ('#nome');
+
+const cognome = document.querySelector ('#cognome');
+
+const citta = document.querySelector ('#citta');
+
 const distanzaInKm = document.querySelector ('#km-distanza');
 
 const etaDelPasseggero = document.querySelector ('#eta');

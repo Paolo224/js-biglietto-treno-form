@@ -4,3 +4,66 @@
     box-sizing: border-box;
 }
 
+header{
+    background-color: rgb(235, 46, 46);
+}
+
+header img{
+    animation-name: trein;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+
+@keyframes trein {
+    from {right: 0%;}
+    to {right: 600%;}
+}
+
+.box{
+    background-color: red;
+    padding: 1rem 2rem;
+    text-align: center;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.punti-bianchi1{
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    border-radius: 33rem;
+    background-color: rgb(255, 255, 255);
+    top: 10%;
+    left: 97%;
+}
+
+.punti-bianchi2{
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    border-radius: 33rem;
+    background-color: rgb(255, 255, 255);
+    top: 10%;
+    right: 97%;
+}
+
+.punti-bianchi3{
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    border-radius: 33rem;
+    background-color: rgb(255, 255, 255);
+    bottom: 10%;
+    left: 97%;
+}
+
+.punti-bianchi4{
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    border-radius: 33rem;
+    background-color: rgb(255, 255, 255);
+    bottom: 10%;
+    right: 97%;
+}

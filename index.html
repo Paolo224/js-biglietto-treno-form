@@ -11,12 +11,56 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <input type="number" id="km-distanza">
-        <input type="number" id="eta">
-        <button class="btn btn-primary">
-            CLICCA
-        </button>
-        <div id="output"></div>
+        <header class="p-1 mb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="offset-10 col-2">
+                        <img class="img-fluid" src="./img/trein.gif" alt="TRENO">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="container">
+                <diw class="row justify-content-center">
+                    <div class="col-6">
+                        <div class="box">
+                            <div class="punti-bianchi1"></div>
+                            <div class="punti-bianchi2"></div>
+                            <div class="punti-bianchi3"></div>
+                            <div class="punti-bianchi4"></div>
+                            <div class="input-group flex-nowrap mb-3">
+                                <span class="input-group-text" id="addon-wrapping">Nome</span>
+                                <input type="text" class="form-control" placeholder="Come ti chiami?" aria-describedby="addon-wrapping" id="nome">
+                            </div>
+                            <div class="input-group flex-nowrap mb-3">
+                                <span class="input-group-text" id="addon-wrapping">Cognome</span>
+                                <input type="text" class="form-control" placeholder="Come fai di cognome?" aria-describedby="addon-wrapping" id="cognome">
+                            </div>
+                            <div class="input-group flex-nowrap mb-3">
+                                <span class="input-group-text" id="addon-wrapping">Città</span>
+                                <input type="text" class="form-control" placeholder="Da dove vieni?" aria-describedby="addon-wrapping" id="citta">
+                            </div>
+                            <div class="input-group flex-nowrap mb-3">
+                                <span class="input-group-text" id="addon-wrapping">Km</span>
+                                <input type="number" class="form-control" placeholder="Quanti kilometri vuoi percorrere?" aria-describedby="addon-wrapping" id="km-distanza">
+                            </div>
+                            <div class="input-group flex-nowrap mb-3">
+                                <span class="input-group-text" id="addon-wrapping">Età</span>
+                                <input type="number" class="form-control" placeholder="Quanti anni hai?" aria-describedby="addon-wrapping" id="eta">
+                            </div>
+                            <button class="btn btn-success">
+                                VIAGGIA
+                            </button>
+                            <div id="output"></div>
+                        </div>
+                    </div>
+                </diw>
+            </div>
+        </main>
+        
+        
 
 
 
